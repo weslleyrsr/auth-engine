@@ -1,3 +1,39 @@
+GET http://0.0.0.0:8080/health
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T214609.404.txt
+
+###
+
+GET http://0.0.0.0:8080/ping
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T214616.404.txt
+
+###
+
+GET http://0.0.0.0:8080/health
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T213037.200.json
+
+###
+
+GET http://0.0.0.0:8080/ping
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T200841.200.json
+
+###
+
 GET http://0.0.0.0:8080/ping
 User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
 Accept-Encoding: br, deflate, gzip, x-gzip

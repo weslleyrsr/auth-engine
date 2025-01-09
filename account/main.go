@@ -29,6 +29,10 @@ func main() {
 		})
 	})
 
+	router.GET("/health", func(c *gin.Context) {
+		c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
+	})
+
 	srv := &http.Server{
 		Addr:    ":8080",
 		Handler: router,
