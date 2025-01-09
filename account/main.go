@@ -23,12 +23,6 @@ func main() {
 		})
 	})
 
-	router.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "pong",
-		})
-	})
-
 	router.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
 	})

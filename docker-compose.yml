@@ -20,7 +20,7 @@ services:
       - "8080"
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.account.rule=Host(`localhost`) && (PathPrefix(`/api/account`) || PathPrefix(`/health`) || PathPrefix(`/ping`))"
+      - "traefik.http.routers.account.rule=Host(`localhost`) && (PathPrefix(`/api/account`) || PathPrefix(`/health`))"
     environment:
       - ENV=dev
     volumes:

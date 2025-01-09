@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: setup docker">
-      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: makefile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,8 @@
     "HTTP Request.generated-requests | GET helth check.executor": "Run",
     "HTTP Request.generated-requests | GET ping endpoint.executor": "Run",
     "HTTP Request.get-requests | GET request with disabled redirects.executor": "Run",
+    "Makefile Target.logs.executor": "Run",
+    "Makefile Target.up.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -78,10 +82,12 @@
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.38900864" />
       <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38900864" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.38900864" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.23527299" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -91,7 +97,7 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Key Promoter X" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.25" />
-      <window_info active="true" anchor="right" id="make" order="5" side_tool="true" visible="true" weight="0.3298828" />
+      <window_info anchor="right" id="make" order="5" side_tool="true" weight="0.3298828" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -146,7 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: setup docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: setup docker" />
+    <MESSAGE value="feat: makefile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: makefile" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
