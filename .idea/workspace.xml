@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: makefile">
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: remove unused endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +72,8 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14121094" />
-      <window_info id="Commit" order="1" weight="0.14121094" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14121094" />
+      <window_info active="true" id="Commit" order="1" visible="true" weight="0.14121094" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -86,8 +84,8 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.38900864" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38900864" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.38900864" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.2948994" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.2948994" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.23527299" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -131,10 +129,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Makefile Target.logs" />
+        <item itemvalue="Makefile Target.logs" />
         <item itemvalue="Makefile Target.up" />
         <item itemvalue="HTTP Request.generated-requests | GET helth check" />
         <item itemvalue="HTTP Request.generated-requests | GET ping endpoint" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: setup docker" />
     <MESSAGE value="feat: makefile" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: makefile" />
+    <MESSAGE value="chore: remove unused endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: remove unused endpoint" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
