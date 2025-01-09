@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: setup docker">
-      <change afterPath="$PROJECT_DIR$/account/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +70,8 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.09277344" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.14121094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14121094" />
+      <window_info id="Commit" order="1" weight="0.14121094" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -86,11 +80,10 @@
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.23527299" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.38900864" />
       <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.38900864" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.23527299" />
       <window_info anchor="right" id="Endpoints" />
-      <window_info anchor="right" id="make" side_tool="true" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.3298828" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
@@ -98,6 +91,7 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Key Promoter X" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.25" />
+      <window_info active="true" anchor="right" id="make" order="5" side_tool="true" visible="true" weight="0.3298828" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -106,29 +100,35 @@
       <recent name="$PROJECT_DIR$/account" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | GET helth check">
+  <component name="RunManager" selected="Makefile Target.logs">
     <configuration name="generated-requests | GET helth check" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="GET helth check" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | GET ping endpoint" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="GET ping endpoint" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="get-requests | GET request with disabled redirects" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" executionIdentifier="GET request with disabled redirects" index="4" runType="Run single request">
+    <configuration name="logs" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="logs" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="up" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="up" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.logs" />
+        <item itemvalue="Makefile Target.up" />
         <item itemvalue="HTTP Request.generated-requests | GET helth check" />
         <item itemvalue="HTTP Request.generated-requests | GET ping endpoint" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.get-requests | GET request with disabled redirects" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
       </list>
     </recent_temporary>
   </component>
