@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/weslleyrsr/auth-engine/handler"
 	"log"
 	"net/http"
 	"os"
@@ -17,14 +18,13 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/api/account", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"hello": "kindly folks",
-		})
+	g := router.Group("/")
+	g.GET("/health", func(c *gin.Context) {
+		c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
 	})
 
-	router.GET("/health", func(c *gin.Context) {
-		c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
+	handler.NewHandler(&handler.Config{
+		Router: router,
 	})
 
 	srv := &http.Server{
