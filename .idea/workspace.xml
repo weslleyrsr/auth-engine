@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: add `me` handler tests">
-      <change afterPath="$PROJECT_DIR$/account/handler/base.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/handler/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/handler/me.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/handler/me_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/model/apperrors/apperrors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/model/interfaces.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/model/mocks/user_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/model/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/model/mocks/user_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/service/user_services.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/service/user_services_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +35,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -89,8 +80,8 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10644531" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.10644531" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10644531" />
+      <window_info id="Commit" order="1" weight="0.10644531" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -100,8 +91,8 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.37535918" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.37535918" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.37535918" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.37535918" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3301006" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.3301006" />
       <window_info anchor="right" id="Endpoints" />
