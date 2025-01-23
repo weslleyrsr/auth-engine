@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: add `me` handler tests">
-      <change afterPath="$PROJECT_DIR$/account/model/mocks/user_repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/user_services.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/user_services_test.go" afterDir="false" />
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: update `.idea` files">
+      <change afterPath="$PROJECT_DIR$/.idea/auth-engine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T200841.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T213037.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T214609.404.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T214616.404.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175435.404.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175450.404.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175507.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175509.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175541.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175543.200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,8 +90,8 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10644531" />
-      <window_info id="Commit" order="1" weight="0.10644531" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10644531" />
+      <window_info active="true" id="Commit" order="1" visible="true" weight="0.10644531" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -166,7 +176,9 @@
     <MESSAGE value="chore: remove unused endpoint" />
     <MESSAGE value="chore: remove version from `docker-compose.yml`" />
     <MESSAGE value="chore: add `me` handler tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add `me` handler tests" />
+    <MESSAGE value="chore: add `user_services` &amp; tests" />
+    <MESSAGE value="chore: update `.idea` files" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update `.idea` files" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
