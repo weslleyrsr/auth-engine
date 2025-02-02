@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: add `signup` endpoint">
-      <change afterPath="$PROJECT_DIR$/account/handler/bind_data.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/handler/signup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/handler/signup_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/mocks/token_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/model/token_pair.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: update `workspace` file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/me.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/me.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/me_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/me_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/model/apperrors/apperrors.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/apperrors/apperrors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/model/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/interfaces.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/model/mocks/user_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/mocks/user_repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/model/mocks/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/mocks/user_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/service/user_services.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/service/user_services_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,18 +98,18 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.3301006" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3301006" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3301006" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3301006" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3301006" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.3301006" />
       <window_info anchor="right" id="PR AI Assistant" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.14628907" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.17832032" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.17832032" />
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Key Promoter X" order="4" weight="0.3298828" />
       <window_info anchor="right" id="Maven" order="5" weight="0.25" />
       <window_info anchor="right" id="Endpoints" order="6" weight="0.3298828" />
-      <window_info anchor="right" id="make" order="7" side_tool="true" weight="0.3298828" />
+      <window_info active="true" anchor="right" id="make" order="7" side_tool="true" visible="true" weight="0.17832032" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298828" />
     </layout>
   </component>
@@ -138,24 +120,24 @@
       <recent name="$PROJECT_DIR$/account/model/apperrors" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.test-account">
+  <component name="RunManager" selected="Docker.Compose auth engine">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="logs" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/makefile" target="logs" workingDirectory="" arguments="">
+    <configuration name="clean" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="clean" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="down" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="down" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
     </configuration>
     <configuration name="test-account" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/makefile" target="test-account" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/makefile" target="test" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -189,18 +171,18 @@
       <item itemvalue="Docker.Compose auth engine" />
       <item itemvalue="Docker.account" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
-      <item itemvalue="Makefile Target.logs" />
-      <item itemvalue="Makefile Target.test" />
+      <item itemvalue="Makefile Target.clean" />
+      <item itemvalue="Makefile Target.down" />
       <item itemvalue="Makefile Target.test-account" />
       <item itemvalue="Makefile Target.up" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.clean" />
+        <item itemvalue="Makefile Target.down" />
+        <item itemvalue="Makefile Target.up" />
+        <item itemvalue="Makefile Target.clean" />
         <item itemvalue="Makefile Target.test-account" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="Makefile Target.test-account" />
-        <item itemvalue="Makefile Target.test-account" />
-        <item itemvalue="Makefile Target.logs" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +207,8 @@
     <MESSAGE value="chore: add `user_services` &amp; tests" />
     <MESSAGE value="chore: update `.idea` files" />
     <MESSAGE value="feat: add `signup` endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add `signup` endpoint" />
+    <MESSAGE value="chore: update `workspace` file" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update `workspace` file" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
