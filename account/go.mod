@@ -1,4 +1,4 @@
-module github.com/weslleyrsr/auth-engine
+module github.com/weslleyrsr/auth-engine/account
 
 go 1.22.0
 

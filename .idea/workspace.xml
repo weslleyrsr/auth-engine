@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: update `.idea` files">
-      <change afterPath="$PROJECT_DIR$/.idea/auth-engine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T200841.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T213037.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T214609.404.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-08T214616.404.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175435.404.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175450.404.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175507.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175509.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175541.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2025-01-09T175543.200.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: add `signup` endpoint">
+      <change afterPath="$PROJECT_DIR$/account/handler/bind_data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/handler/signup.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/handler/signup_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/mocks/token_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/model/token_pair.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/handler/me.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/me.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/handler/me_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/me_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/model/apperrors/apperrors.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/apperrors/apperrors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/model/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/model/mocks/user_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/mocks/user_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/model/mocks/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/mocks/user_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/service/user_services.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/service/user_services_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +51,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -56,43 +65,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | GET helth check.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | GET ping endpoint.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.get-requests | GET request with disabled redirects.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.down.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.logs.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.restart.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.up.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/wrs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Docker.Compose auth engine.executor": "Run",
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "HTTP Request.generated-requests | GET helth check.executor": "Run",
+    "HTTP Request.generated-requests | GET ping endpoint.executor": "Run",
+    "HTTP Request.get-requests | GET request with disabled redirects.executor": "Run",
+    "Makefile Target.clean.executor": "Run",
+    "Makefile Target.down.executor": "Run",
+    "Makefile Target.logs.executor": "Run",
+    "Makefile Target.restart.executor": "Run",
+    "Makefile Target.test-account.executor": "Run",
+    "Makefile Target.test.executor": "Run",
+    "Makefile Target.up.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/home/wrs/code/auth-engine/docker-compose.yml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ssh.settings"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Merge Requests" />
+      <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10644531" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.10644531" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5005241" visible="true" weight="0.12480469" />
+      <window_info id="Commit" order="1" weight="0.12480469" />
+      <window_info id="Structure" order="2" sideWeight="0.4994759" side_tool="true" weight="0.10800782" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -101,19 +115,20 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.37535918" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.37535918" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.3301006" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3301006" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.3301006" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.3301006" />
-      <window_info anchor="right" id="Endpoints" />
-      <window_info anchor="right" id="Coverage" side_tool="true" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.12174855" />
-      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="PR AI Assistant" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.14628907" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.17832032" />
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
-      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Key Promoter X" order="4" weight="0.3298828" />
       <window_info anchor="right" id="Maven" order="5" weight="0.25" />
-      <window_info active="true" anchor="right" id="make" order="6" side_tool="true" visible="true" weight="0.038867187" />
+      <window_info anchor="right" id="Endpoints" order="6" weight="0.3298828" />
+      <window_info anchor="right" id="make" order="7" side_tool="true" weight="0.3298828" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298828" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -123,21 +138,24 @@
       <recent name="$PROJECT_DIR$/account/model/apperrors" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
-    <configuration name="generated-requests | GET helth check" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="GET helth check" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Makefile Target.test-account">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#2" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="down" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/makefile" target="down" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
       <method v="2" />
     </configuration>
     <configuration name="logs" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/makefile" target="logs" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="test-account" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="test-account" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/makefile" target="test" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -148,13 +166,41 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="Compose auth engine" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="$PROJECT_DIR$/.env.dev" />
+          <option name="removeOrphansOnComposeDown" value="false" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="account" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="account/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Compose auth engine" />
+      <item itemvalue="Docker.account" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="Makefile Target.logs" />
+      <item itemvalue="Makefile Target.test" />
+      <item itemvalue="Makefile Target.test-account" />
+      <item itemvalue="Makefile Target.up" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.test-account" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | GET helth check" />
+        <item itemvalue="Makefile Target.test-account" />
+        <item itemvalue="Makefile Target.test-account" />
         <item itemvalue="Makefile Target.logs" />
-        <item itemvalue="Makefile Target.up" />
-        <item itemvalue="Makefile Target.down" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +224,8 @@
     <MESSAGE value="chore: add `me` handler tests" />
     <MESSAGE value="chore: add `user_services` &amp; tests" />
     <MESSAGE value="chore: update `.idea` files" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update `.idea` files" />
+    <MESSAGE value="feat: add `signup` endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add `signup` endpoint" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -2,7 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/weslleyrsr/auth-engine/handler"
+	"github.com/weslleyrsr/auth-engine/account/handler"
+	"github.com/weslleyrsr/auth-engine/account/service"
 	"log"
 	"net/http"
 	"os"
@@ -17,6 +18,7 @@ func main() {
 	log.Println("Starting server...")
 
 	router := gin.Default()
+	us := service.NewUserService(&service.USConfig{})
 
 	g := router.Group("/")
 	g.GET("/health", func(c *gin.Context) {
@@ -24,7 +26,8 @@ func main() {
 	})
 
 	handler.NewHandler(&handler.Config{
-		Router: router,
+		Router:      router,
+		UserService: us,
 	})
 
 	srv := &http.Server{

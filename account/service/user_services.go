@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 	"github.com/google/uuid"
-	"github.com/weslleyrsr/auth-engine/model"
+	"github.com/weslleyrsr/auth-engine/account/model"
 )
 
 type UserService struct {
@@ -26,4 +26,9 @@ func (s *UserService) Get(ctx context.Context, uid uuid.UUID) (*model.User, erro
 	u, err := s.UserRepository.FindByID(ctx, uid)
 
 	return u, err
+}
+
+// Signup just panics
+func (s *UserService) Signup(ctx context.Context, u *model.User) error {
+	panic("Method not implemented yet.")
 }

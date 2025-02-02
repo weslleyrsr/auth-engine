@@ -2,7 +2,7 @@
 COMPOSE_FILE=docker-compose.yml
 
 # Targets
-.PHONY: up down restart logs clean build
+.PHONY: up down restart logs clean build test-account
 
 # Start the app
 up:
@@ -31,3 +31,8 @@ clean:
 build:
 	@echo "Building the app..."
 	docker-compose -f $(COMPOSE_FILE) up --build -d
+
+# Test account
+test-account:
+	@echo "Testing Account..."
+	cd account && go test ./...

@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/mock"
-	"github.com/weslleyrsr/auth-engine/model"
+	"github.com/weslleyrsr/auth-engine/account/model"
 )
 
 // MockUserRepository is a mock type for model.UserRepository

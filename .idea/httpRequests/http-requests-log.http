@@ -1,4 +1,124 @@
 POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
+Content-Length: 47
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{"email": "bobby@bob.com, "password": "secret"}
+
+<> 2025-01-30T215000.500.json
+
+###
+
+POST http://localhost/api/account/signup
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-01-30T214917.500.json
+
+###
+
+POST http://localhost/api/account/signup
 User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*

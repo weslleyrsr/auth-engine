@@ -6,8 +6,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/weslleyrsr/auth-engine/model"
-	"github.com/weslleyrsr/auth-engine/model/mocks"
+	"github.com/weslleyrsr/auth-engine/account/mocks"
+	"github.com/weslleyrsr/auth-engine/account/model"
 	"testing"
 )
 

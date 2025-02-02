@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/weslleyrsr/auth-engine/model"
-	"github.com/weslleyrsr/auth-engine/model/apperrors"
+	"github.com/weslleyrsr/auth-engine/account/model"
+	"github.com/weslleyrsr/auth-engine/account/model/apperrors"
 )
 
 // Me handler calls services for getting

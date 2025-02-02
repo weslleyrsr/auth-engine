@@ -3,6 +3,7 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/weslleyrsr/auth-engine/account/mocks"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -11,9 +12,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/weslleyrsr/auth-engine/model"
-	"github.com/weslleyrsr/auth-engine/model/apperrors"
-	"github.com/weslleyrsr/auth-engine/model/mocks"
+	"github.com/weslleyrsr/auth-engine/account/model"
+	"github.com/weslleyrsr/auth-engine/account/model/apperrors"
 )
 
 func TestMe(t *testing.T) {
