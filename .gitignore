@@ -27,3 +27,5 @@ go.work.sum
 
 # Keys
 *.pem
+
+.idea/workspace.xml
