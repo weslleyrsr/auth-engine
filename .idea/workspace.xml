@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="feat: add token service">
-      <change afterPath="$PROJECT_DIR$/account/model/repository/pg_user_repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/password.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/token_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/token_service_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/service/tokens.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/account/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/me_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/me_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/handler/signup_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/handler/signup_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/mocks/token_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/mocks/token_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/mocks/user_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/mocks/user_repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/mocks/user_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/mocks/user_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/model/interfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/model/interfaces.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/service/user_services.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/service/user_services_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/account/service/user_services_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+    <list default="true" id="aa8ad934-4b29-4b32-8c0a-f8e7cbaa0520" name="Changes" comment="chore: update gitignore">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +22,11 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -67,40 +51,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Docker.Compose auth engine.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | GET helth check.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | GET ping endpoint.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.get-requests | GET request with disabled redirects.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.clean.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.create-keypair.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.down.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.logs.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.restart.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test-account.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.test.executor&quot;: &quot;Run&quot;,
-    &quot;Makefile Target.up.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/wrs/code/auth-engine/docker-compose.yml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;go.autoimport&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Docker.Compose auth engine.executor": "Run",
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "HTTP Request.generated-requests | GET helth check.executor": "Run",
+    "HTTP Request.generated-requests | GET ping endpoint.executor": "Run",
+    "HTTP Request.get-requests | GET request with disabled redirects.executor": "Run",
+    "Makefile Target.clean.executor": "Run",
+    "Makefile Target.create-keypair.executor": "Run",
+    "Makefile Target.down.executor": "Run",
+    "Makefile Target.logs.executor": "Run",
+    "Makefile Target.restart.executor": "Run",
+    "Makefile Target.test-account.executor": "Run",
+    "Makefile Target.test.executor": "Run",
+    "Makefile Target.up.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "v2",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/home/wrs/code/auth-engine/docker-compose.yml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "go.autoimport"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -108,8 +92,8 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5005241" weight="0.16464844" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.16464844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5005241" visible="true" weight="0.21953125" />
+      <window_info id="Commit" order="1" weight="0.21953125" />
       <window_info id="Structure" order="2" sideWeight="0.4994759" side_tool="true" weight="0.10800782" />
       <window_info id="Pull Requests" order="3" weight="0.11191407" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -119,10 +103,10 @@
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info active="true" anchor="bottom" id="Problems View" order="2" visible="true" weight="0.2575431" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.2575431" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.2575431" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.26257184" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.2575431" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.35416666" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.35416666" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.35416666" />
       <window_info anchor="right" id="PR AI Assistant" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.17832032" />
       <window_info anchor="right" id="AIAssistant" order="1" weight="0.17832032" />
@@ -131,7 +115,7 @@
       <window_info anchor="right" id="Key Promoter X" order="4" weight="0.3298828" />
       <window_info anchor="right" id="Maven" order="5" weight="0.25" />
       <window_info anchor="right" id="Endpoints" order="6" weight="0.09628907" />
-      <window_info anchor="right" id="make" order="7" side_tool="true" weight="0.3298828" />
+      <window_info anchor="right" id="make" order="7" side_tool="true" weight="0.32994792" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3298828" />
     </layout>
   </component>
@@ -233,7 +217,8 @@
     <MESSAGE value="chore: update `workspace` file" />
     <MESSAGE value="chore: describe `docker-compose` file" />
     <MESSAGE value="feat: add token service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add token service" />
+    <MESSAGE value="chore: update gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update gitignore" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
