@@ -11,16 +11,18 @@ import (
 
 // Handler struct holds required services for handler to function
 type Handler struct {
-	UserService  model.UserService
-	TokenService model.TokenService
+	UserService    model.UserService
+	TokenService   model.TokenService
+	UserRepository model.UserRepository
 }
 
 // Config will hold services that will eventually be injected into this
 // handler layer on handler initialization
 type Config struct {
-	Router       *gin.Engine
-	UserService  model.UserService
-	TokenService model.TokenService
+	Router         *gin.Engine
+	UserService    model.UserService
+	TokenService   model.TokenService
+	UserRepository model.UserRepository
 }
 
 // NewHandler initializes the handler with required injected services along with http routes

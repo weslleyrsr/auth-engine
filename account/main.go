@@ -18,6 +18,7 @@ func main() {
 	log.Println("Starting server...")
 
 	router := gin.Default()
+	//ur := repository.NewUserRepository()
 	us := service.NewUserService(&service.USConfig{})
 
 	g := router.Group("/")
@@ -28,6 +29,7 @@ func main() {
 	handler.NewHandler(&handler.Config{
 		Router:      router,
 		UserService: us,
+		//UserRepository: ur
 	})
 
 	srv := &http.Server{

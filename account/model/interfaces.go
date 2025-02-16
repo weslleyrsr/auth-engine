@@ -19,5 +19,5 @@ type TokenService interface {
 // UserRepository defined methods the service layer expects any repository it interacts with to implement
 type UserRepository interface {
 	FindByID(ctx context.Context, uid uuid.UUID) (*User, error)
-	FindByEmail(ctx context.Context, email string) (*User, error)
+	Create(ctx context.Context, u *User) error
 }

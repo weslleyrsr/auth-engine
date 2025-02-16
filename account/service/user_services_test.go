@@ -3,12 +3,14 @@ package service
 import (
 	"context"
 	"fmt"
+	"testing"
+
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/weslleyrsr/auth-engine/account/mocks"
 	"github.com/weslleyrsr/auth-engine/account/model"
-	"testing"
+	"github.com/weslleyrsr/auth-engine/account/model/apperrors"
+	"github.com/weslleyrsr/auth-engine/account/model/mocks"
 )
 
 func TestGet(t *testing.T) {
@@ -28,9 +30,10 @@ func TestGet(t *testing.T) {
 		mockUserRepository.On("FindByID", mock.Anything, uid).Return(mockUserResp, nil)
 
 		ctx := context.TODO()
-		user, _ := us.Get(ctx, uid)
+		u, err := us.Get(ctx, uid)
 
-		assert.Equal(t, user, mockUserResp)
+		assert.NoError(t, err)
+		assert.Equal(t, u, mockUserResp)
 		mockUserRepository.AssertExpectations(t)
 	})
 
@@ -45,10 +48,73 @@ func TestGet(t *testing.T) {
 		mockUserRepository.On("FindByID", mock.Anything, uid).Return(nil, fmt.Errorf("Some error down the call chain"))
 
 		ctx := context.TODO()
-		user, err := us.Get(ctx, uid)
+		u, err := us.Get(ctx, uid)
 
-		assert.Nil(t, user)
+		assert.Nil(t, u)
 		assert.Error(t, err)
+		mockUserRepository.AssertExpectations(t)
+	})
+}
+
+func TestSignup(t *testing.T) {
+	t.Run("Success", func(t *testing.T) {
+		uid, _ := uuid.NewRandom()
+
+		mockUser := &model.User{
+			Email:    "bob@bob.com",
+			Password: "howdyhoneighbor!",
+		}
+
+		mockUserRepository := new(mocks.MockUserRepository)
+		us := NewUserService(&USConfig{
+			UserRepository: mockUserRepository,
+		})
+
+		// We can use Run method to modify the user when the Create method is called.
+		//  We can then chain on a Return method to return no error
+		mockUserRepository.
+			On("Create", mock.Anything, mockUser).
+			Run(func(args mock.Arguments) {
+				userArg := args.Get(1).(*model.User) // arg 0 is context, arg 1 is *User
+				userArg.UID = uid
+			}).Return(nil)
+
+		ctx := context.TODO()
+		err := us.Signup(ctx, mockUser)
+
+		assert.NoError(t, err)
+
+		// assert user now has a userID
+		assert.Equal(t, uid, mockUser.UID)
+
+		mockUserRepository.AssertExpectations(t)
+	})
+
+	t.Run("Error", func(t *testing.T) {
+		mockUser := &model.User{
+			Email:    "bob@bob.com",
+			Password: "howdyhoneighbor!",
+		}
+
+		mockUserRepository := new(mocks.MockUserRepository)
+		us := NewUserService(&USConfig{
+			UserRepository: mockUserRepository,
+		})
+
+		mockErr := apperrors.NewConflict("email", mockUser.Email)
+
+		// We can use Run method to modify the user when the Create method is called.
+		//  We can then chain on a Return method to return no error
+		mockUserRepository.
+			On("Create", mock.Anything, mockUser).
+			Return(mockErr)
+
+		ctx := context.TODO()
+		err := us.Signup(ctx, mockUser)
+
+		// assert error is error we response with in mock
+		assert.EqualError(t, err, mockErr.Error())
+
 		mockUserRepository.AssertExpectations(t)
 	})
 }

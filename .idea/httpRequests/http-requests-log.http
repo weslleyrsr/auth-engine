@@ -97,6 +97,20 @@ Accept: */*
 ###
 
 POST http://localhost/api/account/signup
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "bobby@bobson.com",
+  "password": "secret"
+}
+
+###
+
+POST http://localhost/api/account/signup
 Content-Length: 47
 User-Agent: IntelliJ HTTP Client/GoLand 2024.3 RC
 Accept-Encoding: br, deflate, gzip, x-gzip

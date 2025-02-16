@@ -6,9 +6,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"github.com/weslleyrsr/auth-engine/account/mocks"
 	"github.com/weslleyrsr/auth-engine/account/model"
 	"github.com/weslleyrsr/auth-engine/account/model/apperrors"
+	mocks2 "github.com/weslleyrsr/auth-engine/account/model/mocks"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -20,7 +20,7 @@ func TestSignup(t *testing.T) {
 
 	t.Run("Email and Password Required", func(t *testing.T) {
 		// We just want this to show that it's not called in this case
-		mockUserService := new(mocks.MockUserService)
+		mockUserService := new(mocks2.MockUserService)
 		mockUserService.On("Signup", mock.AnythingOfType("*gin.Context"), mock.AnythingOfType("*model.User")).Return(nil)
 
 		// A response recorder for getting written http response
@@ -53,7 +53,7 @@ func TestSignup(t *testing.T) {
 
 	t.Run("Invalid email", func(t *testing.T) {
 		// We just want this to show that it's not called in this case
-		mockUserService := new(mocks.MockUserService)
+		mockUserService := new(mocks2.MockUserService)
 		mockUserService.On("Signup", mock.AnythingOfType("*gin.Context"), mock.AnythingOfType("*model.User")).Return(nil)
 
 		// A response recorder for getting written http response
@@ -87,7 +87,7 @@ func TestSignup(t *testing.T) {
 
 	t.Run("Password too short", func(t *testing.T) {
 		// We just want this to show that it's not called in this case
-		mockUserService := new(mocks.MockUserService)
+		mockUserService := new(mocks2.MockUserService)
 		mockUserService.On("Signup", mock.AnythingOfType("*gin.Context"), mock.AnythingOfType("*model.User")).Return(nil)
 
 		// A response recorder for getting written http response
@@ -121,7 +121,7 @@ func TestSignup(t *testing.T) {
 
 	t.Run("Password too long", func(t *testing.T) {
 		// We just want this to show that it's not called in this case
-		mockUserService := new(mocks.MockUserService)
+		mockUserService := new(mocks2.MockUserService)
 		mockUserService.On("Signup", mock.AnythingOfType("*gin.Context"), mock.AnythingOfType("*model.User")).Return(nil)
 
 		// A response recorder for getting written http response
@@ -160,7 +160,7 @@ func TestSignup(t *testing.T) {
 		}
 
 		// We just want this to show that it's not called in this case
-		mockUserService := new(mocks.MockUserService)
+		mockUserService := new(mocks2.MockUserService)
 		mockUserService.On("Signup", mock.AnythingOfType("*gin.Context"), mock.AnythingOfType("*model.User")).Return(apperrors.NewConflict("User Already Exists", u.Email))
 
 		// A response recorder for getting written http response
@@ -203,8 +203,8 @@ func TestSignup(t *testing.T) {
 			RefreshToken: "refresh-token",
 		}
 
-		mockUserService := new(mocks.MockUserService)
-		mockTokenService := new(mocks.MockTokenService)
+		mockUserService := new(mocks2.MockUserService)
+		mockTokenService := new(mocks2.MockTokenService)
 
 		// Mock UserService response
 		mockUserService.
@@ -270,8 +270,8 @@ func TestSignup(t *testing.T) {
 
 		mockErrorResponse := apperrors.NewInternal()
 
-		mockUserService := new(mocks.MockUserService)
-		mockTokenService := new(mocks.MockTokenService)
+		mockUserService := new(mocks2.MockUserService)
+		mockTokenService := new(mocks2.MockTokenService)
 
 		// Mock UserService response
 		mockUserService.

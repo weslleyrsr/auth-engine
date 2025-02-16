@@ -3,7 +3,7 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/weslleyrsr/auth-engine/account/mocks"
+	"github.com/weslleyrsr/auth-engine/account/model/mocks"
 	"net/http"
 	"net/http/httptest"
 	"testing"
